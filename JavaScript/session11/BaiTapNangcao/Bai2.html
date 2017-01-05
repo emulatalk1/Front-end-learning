@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập 2: Click vào hình nhỏ nào bên dưới thì hình to sẽ hiển thị tương ứng</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script >
+		$(document).ready(function() {
+			$(".small").click(function() {
+				$("#slider").hide();
+				$("#slider").attr("src", $(this).attr("src"));
+				$("#slider").fadeIn();
+			});
+		});
+	</script>
+	 <style>
+	        	.small {
+		           width: 100px;
+		           margin: 10px ;
+		           cursor: pointer;
+		}
+		#slider {
+				height: 500px;
+				max-width: 100%;
+				display: block;
+				margin: auto;
+		}
+		img {
+			width: 750px;
+		}
+    	</style>
+</head>
+<body>
+	<img id="slider" src="Images/1.jpeg"/>
+	<br/>
+	<div id="thumbnails">
+		<center>
+			<img class="small" src="Images/1.jpeg"/>
+			<img class="small" src="Images/2.jpg">
+			<img class="small" src="Images/3.jpeg">
+			<img class="small" src="Images/4.jpg">
+			<img class="small" src="Images/5.jpeg">
+		</center>
+	</div>
+</body>
+</html>

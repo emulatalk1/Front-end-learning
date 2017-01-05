@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>7. Nhập vào 02 số nguyên. Sau đó hoán chuyển giá trị 02 số đó rồi in ra màn hình.</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			$("#hoandoi").click(function() {
+				a = parseInt($("#soa").val());
+				b = parseInt($("#sob").val());
+				$("#soa").val(b);
+				$("#sob").val(a);
+			});
+		});
+	</script>
+</head>
+<body>
+	<label>Số a: </label>
+	<input type="text" id="soa">
+	<br>
+	<label>Số b: </label>
+	<input type="text" id="sob">
+	<br>
+	<button id="hoandoi">Hoán đôi</button>
+</body>
+</html>

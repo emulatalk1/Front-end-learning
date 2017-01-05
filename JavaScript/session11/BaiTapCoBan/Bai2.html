@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2. Nhập vào 02 số nguyên. Sau đó in trung bình cộng của 03 số đó theo định dạng như sau: "TBC cua 03 so nguyen a, b, c la: "</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		var a = prompt("Nhập số nguyên a:")
+		var b = prompt("Nhập số nguyên b:")
+		var c = prompt("Nhập số nguyên c:")
+		var tbc = (parseInt(a) + parseInt(b) + parseInt(c)) / 3
+		$(document).ready(function() {
+			$("#tbc").html("TBC của 3 số nguyên a, b, c là: " + tbc);
+		});
+	</script>
+</head>
+<body>
+	<div id="tbc"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập 3: Dùng đối tượng thời gian để thiết lập tự động chuyển hình sau 1 khoảng thời gian nhất định.</title>
+	<meta charset="utf-8">
+	<style>
+		img{
+			margin: auto;
+			display: none;
+			height: 600px;
+			max-width: 100%;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			var currentImage = 0;
+			var images = $("img");
+			var countImage = images.length;
+			function hideImages() {
+				var image = images.eq(currentImage);
+				images.hide();
+				image.fadeIn();
+				image.css("display","block");
+			}
+			var autoPlay = setInterval(function() {
+				currentImage += 1;
+				if(currentImage > countImage - 1) {
+					currentImage = 0;
+				}
+				hideImages();
+			}, 3000);
+		});
+	</script>
+</head>
+<body>
+	<div id="slider">
+		<img style="display: block" src="Images/1.jpeg">
+		<img src="Images/2.jpg">
+		<img src="Images/3.jpeg">
+		<img src="Images/4.jpg">
+		<img src="Images/5.jpeg">
+	</div>
+</body>
+</html>

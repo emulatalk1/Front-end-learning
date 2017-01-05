@@ -1,0 +1,88 @@
+#main {
+	margin: 20px 100px 20px 100px;
+	overflow: auto;
+}
+.bar {
+	margin: 20px 20px 20px 20px;
+	overflow: auto;
+}
+.status-none {
+	background-color: #fbf9fb;
+}
+.bgred-1 {
+	background-color: #e54d4c;
+}
+.bgred-2 {
+	background-color: #f85255;
+	width: 20%;
+	float: left;	
+}
+.bgblue-1 {
+	background-color: #2eb7ce;
+}
+.bgblue-2 {
+	background-color: #32c7de;
+	width: 50%;
+	float: left;	
+}
+.bggreen-1 {
+	background-color: #4bc25f;
+}
+.bggreen-2 {
+	background-color: #52d467;
+	width: 70%;
+	float: left;
+}
+.bgyellow-1 {
+	background-color: #eac319;
+}
+.bgyellow-2 {
+	background-color: #fdd419;
+	width: 30%;
+	float: left;
+}
+.bgpur-1 {
+	background-color: #bb70d6;
+}
+.bgpur-2 {
+	background-color: #cc78e8;
+	width: 45%;
+	float: left;
+}
+.bgpink-1 {
+	background-color: #ec58d7;
+}
+.bgpink-2 {
+	background-color: #ff60e9;
+	width: 80%;
+	float: left;
+}
+.bgsky-1 {
+	background-color: #5690d9;
+}
+.bgsky-2 {
+	background-color: #619bec;
+	width: 37%;
+	float: left;
+}
+.block-name {
+	width: 25%;
+	height: 50px;
+	float: left;
+}
+.text-name {
+	color: white;
+	font-weight: bold;
+	text-align: right;
+	padding: 17px 15px 0 0;
+}
+.text-status {
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	padding: 17px 0 15px 15px;
+}
+.status {
+	width: 75%; 
+	float: left;
+}

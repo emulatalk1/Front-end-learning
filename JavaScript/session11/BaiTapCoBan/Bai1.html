@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nhập vào 03 số nguyên. Sau đó in tổng của 03 số đó theo định dạng như sau: "Tong cua 03 so nguyen a, b, c la: "</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script >
+		var a = prompt("Nhập số nguyên a:")
+		var b = prompt("Nhập số nguyên b:")
+		var c = prompt("Nhập số nguyên c:")
+		var tong = parseInt(a) + parseInt(b) + parseInt(c)
+		$( document ).ready(function() {
+			$("#ketqua").html("Tổng của 3 số nguên a, b, c là: " + tong);
+		})
+	</script>
+</head>
+<body>
+	<div id="ketqua"></div>
+</body>
+</html>

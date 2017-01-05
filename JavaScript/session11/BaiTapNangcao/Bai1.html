@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập 1: Click nào nút Next thì hình to chuyển sang hình tiếp theo, tương tự đối với nút Previous</title>
+	<meta charset="utf-8">
+	<style>
+		#slider {
+			text-align: center;
+		}
+		img {
+			margin: auto;
+			display: none;
+			max-width: 100%;
+			height: 600px;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			var currentImage = 0;
+			var images = $("img");
+			var countImage = images.length;
+			function hideImages() {
+				var image = images.eq(currentImage);
+				images.hide();
+				image.fadeIn();
+				image.css("display","block");
+			} 
+			$("#next").click(function() {
+				currentImage += 1;
+				if (currentImage > countImage -1) {
+					currentImage = 0;
+				}
+				hideImages();
+			});
+			$("#previous").click(function() {
+				currentImage -= 1;
+				if (currentImage < 0) {
+					currentImage = countImage - 1 ;
+				}
+				hideImages();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="slider">
+		<img style="display: block" src="Images/1.jpeg">
+		<img src="Images/2.jpg">
+		<img src="Images/3.jpeg">
+		<img src="Images/4.jpg">
+		<img src="Images/5.jpeg">
+		<br>
+		<button id="previous">Previous</button>
+		<button id="next">Next</button>
+	</div>
+</body>
+</html>

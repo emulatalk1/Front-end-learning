@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6. Nhập vào đơn giá của 1 sản phẩm và số lượng của sản phẩm đó. Sau đó tính số tiền khách phải trả, biết rằng cửa hàng đang giảm giá 10%.</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script >
+		$(document).ready(function() {
+			$("#tinh").click(function() {
+				thanhtien = (parseFloat($("#dongia").val()) * parseFloat($("#soluong").val())) * 0.1;
+				$("#thanhtien").html(thanhtien);
+			});
+		});
+	</script>
+</head>
+<body>
+	<label>Đơn giá:</label>
+	<input type="text" id="dongia">
+	<br>
+	<label>Số lượng:</label>
+	<input type="text" id="soluong">
+	<br>
+	<button id="tinh">Tính</button>
+	<p id="thanhtien"></p>
+</body>
+</html>

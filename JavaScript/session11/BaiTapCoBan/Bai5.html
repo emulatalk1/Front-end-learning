@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5. Nhập vào 3 cạnh của hình hộp chữ nhật, Sau đó tính thể tích của nó.</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			$("#btnkq").click(function() {
+				var a = $("#chieudai").val();
+				var b = $("#chieurong").val();
+				var c = $("#chieucao").val();
+				var kq = a * b * c;
+				$("#kq").val(kq);
+			});
+		});
+	</script>
+</head>
+<body>
+	<label focus="chieudai">Chiều dài: </label>
+	<input type="text" id="chieudai">
+	<br>
+	<label focus="chieurong">Chiều rộng: </label>
+	<input type="text" id="chieurong">
+	<br>
+	<label focus="chieucao">Chiều cao: </label>
+	<input type="text" id="chieucao">
+	<br>
+	<button id="btnkq">Tính</button>
+	<br>
+	<label>Thể tích hình hộp chữ nhật là: </label>
+	<input type="text" id="kq" readonly>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+	background-color: #f5f7fd;
+}
+.follower-color {
+	background-color: #fb5055;
+}
+.following-color {
+	background-color: #35c5dd;
+}
+.message-color {
+	background-color: #52d666;
+}
+.like-color {
+	background-color: #fcd51b;
+}
+.comment-color {
+	background-color: #d179e3;
+}
+.card {
+	margin: 50px 200px 50px 200px;
+	overflow: auto;
+	border-right: 2px solid #e2e3e6;
+	border-left: 2px solid #e2e3e6;
+	background-color: white;
+}
+.content-image {
+	background-image: url("1.jpeg");
+	background-size: cover;
+	overflow: auto;
+}
+.avatar {
+	margin: 250px 0 70px 50px;
+	float: left;
+	width: 25%;
+}
+.picture {
+	background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.name-job {
+	float: left;
+	margin: 280px 0 0 -40px;
+	color: white;
+}
+.name {
+	font-size: 40pt;
+}
+.job {
+	font-size: 20pt;
+}
+.sub-text {
+	overflow: auto;
+	border-bottom: 2px solid #e2e3e6;
+	padding: 20px 50px 20px 50px;
+	font-size: 20pt;
+}
+.text {
+	width:50%;
+	float: left;
+	padding: 10px 0 0 0;
+}
+.number {
+	width: 10%;
+	float: right;
+	text-align: right;
+	border-radius: 5px;
+	padding: 7px 16px 7px 0;
+	color: white;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4. Nhập vào hai cạnh a, b và đường cao h. Sau đó tính diện tích hình bình hành. Gợi ý: S = (a+b)*h/2).</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		var a = prompt("Nhập cạnh a: ")
+		var b = prompt("Nhập cạnh b: ")
+		var h = prompt("Nhập đường cao h: ")
+		var S = (parseFloat(a) + parseFloat(b)) * h/2
+		$(document).ready(function() {
+			$("#kq").html("Diện tích hình bình hành là: " + S);
+		});
+	</script>
+</head>
+<body>
+	<div id="kq"></div>
+</body>
+</html>
